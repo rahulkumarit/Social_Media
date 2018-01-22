@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtRupess"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/txtDocName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:padding="2dp"
+        android:text="Dr. Srivastav"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="M.M.B.S ,F.R.CS"
+        app:layout_constraintStart_toStartOf="@+id/txtDocName"
+        app:layout_constraintTop_toBottomOf="@+id/txtDocName" />
+
+    <TextView
+        android:id="@+id/txtDegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtSatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtSatus" />
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="-----------------------------------------------------------------------"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDegree" />
+
+    <TextView
+        android:id="@+id/txtHospitalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:padding="2dp"
+        android:text="Applo Hospital"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/marker"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Stelllite , Ahemdabad"
+        app:layout_constraintStart_toStartOf="@+id/txtHospitalName"
+        app:layout_constraintTop_toBottomOf="@+id/txtHospitalName" />
+
+    <TextView
+        android:id="@+id/txtRs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:drawableLeft="@drawable/inr_currency"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="INR 500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHospitalName" />
+
+    <TextView
+        android:id="@+id/txtTimeTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/clock"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Mon- Wed :10 AM to  1 PM"
+        app:layout_constraintStart_toStartOf="@+id/txtAddress"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddress" />
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/book_an_appotment"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTimeTable" />
+
+
+</android.support.constraint.ConstraintLayout>

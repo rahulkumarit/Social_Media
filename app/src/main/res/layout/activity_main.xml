@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doctorappoinment.activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hostpital_building" />
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="282dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/back_edit_text"
+        android:drawableLeft="@drawable/icn_user_outline"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="username"
+        android:inputType="text"
+        android:lines="1"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="282dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_edit_text"
+        android:drawableLeft="@drawable/icn_pswd"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtFirstName" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/colorPrimary"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Don't have account ?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <TextView
+        android:id="@+id/txtSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Sign Up"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.doctorappoinment.activities.LoginActivity">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="394dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            app:srcCompat="@drawable/hostpital_building" />
+
+        <EditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="282dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/back_edit_text"
+            android:drawableLeft="@drawable/ic_account_box_black_24dp"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="First name"
+            android:inputType="text"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="282dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_edit_text"
+            android:drawableLeft="@drawable/icn_mobile"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/txtBirthDay"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+        <EditText
+            android:id="@+id/edtLastName"
+            android:layout_width="282dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_edit_text"
+            android:drawableLeft="@drawable/ic_account_box_black_24dp"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtFirstName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/edtFirstName" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/txtBirthDay"
+            app:layout_constraintTop_toBottomOf="@+id/txtBirthDay">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Female"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/txtBirthDay"
+            android:layout_width="282dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_edit_text"
+            android:drawableLeft="@drawable/icn_calendar"
+            android:drawablePadding="5dp"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Birthdate"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtLastName"
+            app:layout_constraintStart_toStartOf="@+id/edtLastName"
+            app:layout_constraintTop_toBottomOf="@+id/edtLastName" />
+
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="282dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_edit_text"
+            android:drawableLeft="@drawable/ic_account_box_black_24dp"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+
+        <EditText
+            android:id="@+id/edtPswd"
+            android:layout_width="282dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_edit_text"
+            android:drawableLeft="@drawable/icn_pswd"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/editText3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editText3"
+            app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="282dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_edit_text"
+            android:drawableLeft="@drawable/icn_pswd"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Retype Password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtPswd"
+            app:layout_constraintStart_toStartOf="@+id/edtPswd"
+            app:layout_constraintTop_toBottomOf="@+id/edtPswd" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="120dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/colorPrimary"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
